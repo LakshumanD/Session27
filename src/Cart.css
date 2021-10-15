@@ -1,0 +1,76 @@
+.box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.box > div {
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+  margin: 2%;
+  /* background-color: lightgray; */
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  /* box-shadow: 4px 4px 4px 4px gray; */
+  flex: 0 0 25%;
+}
+.top {
+  background-color: lightgray;
+  height: 25%;
+  text-align: center;
+  padding: 5%;
+}
+
+.fancy {
+  /* margin-top: 15%; */
+  text-align: center;
+  padding: 2%;
+}
+
+button {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  /* margin-top: 10%; */
+  padding: 2%;
+  /* margin-bottom: 10%; */
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
+.button {
+  padding: 2%;
+}
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+@media screen and (max-width: 990px) {
+  .box > div {
+    flex: 0 0 33%;
+  }
+}
+@media screen and (max-width: 769px) {
+  .box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .box > div {
+    width: 60%;
+  }
+}
+
+.Count {
+  border: 1px solid black;
+  padding: 5%;
+  border-radius: 5px;
+  width: 100px;
+  text-align: right;
+}
